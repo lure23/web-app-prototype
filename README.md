@@ -19,6 +19,9 @@ A Svelte web app with:
 ## Requirements
 
 - `npm` (or `pnpm`, you know if you use it..)
+- Node 16 or 18
+
+   ><small>The limitation of not supporting Node 20 comes from the Vercel adapter. You can tune your config to support it, use virtualization, or install a certain version of Node (e.g. `brew install node@18` on macOS & HomeBrew).</small>
 
 ## Steps
 
@@ -53,17 +56,15 @@ You can preview the production build with `npm run preview`.
 
 -->
 
-## Domain setup
+## Domain setup (optional)
 
-Using Vercel for hosting, but my domain is managed elsewhere.
+You can simply deploy to a Vercel URL, but they are rather long. If you have a custom domain, follow [Working with Domains](https://vercel.com/docs/concepts/projects/domains/working-with-domains) and you'll have the app in your own namespace, in no time!
 
-- Added `CNAME` `app` `cname.vercel-dns.com.` to the domain manager's DNS entries. <sup>[1]</sup>
+>The author bound the app to [`app.outstanding.earth`](https://app.outstanding.earth)
 
-The app's `main` branch is now visible at [`app.outstanding.earth`](https://app.outstanding.earth).
+<span />
 
 > Note: Vercel takes care of creating the certificate for `https`. Nice!
-
-<sub>`[1]`: Vercel Docs > Domains > [Working with Domains](https://vercel.com/docs/concepts/projects/domains/working-with-domains)</sub>
 
 ## CI/CD
 
