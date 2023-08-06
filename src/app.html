@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<!-- See -> https://stackoverflow.com/questions/4014823/does-a-favicon-have-to-be-32×32-or-16×16
+		-->
+		<link rel="shortcut icon" type="image/png" href="%sveltekit.assets%/favicon-256.png">
+		<link rel="shortcut icon" sizes="192x192" href="%sveltekit.assets%/favicon-256.png">
+		<link rel="apple-touch-icon" href="%sveltekit.assets%/favicon-256.png">
+
+		<meta name="viewport" content="width=device-width" />
+		%sveltekit.head%
+	</head>
+	<body data-sveltekit-preload-data="hover">
+		<div style="display: contents">%sveltekit.body%</div>
+	</body>
+</html>
