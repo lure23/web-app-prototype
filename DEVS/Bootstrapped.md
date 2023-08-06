@@ -1,5 +1,7 @@
 # Bootstrapped 🥾
 
+## Code
+
 This is how the project got started:
 
 ```
@@ -58,6 +60,36 @@ Next steps:
 Note how `create-svelte` nicely provides the URLs for learning about the tools one has enabled. The author is looking them through.
 
 
-## ..in addition
+### ..some currying 🍜🍛
 
 `/.editorconfig` was added. It steers at least IntelliJ IDE's on editor preferences.
+
+
+## Vercel
+
+### Connected the GitHub repo
+
+*...did not make notes about this step, but it was pretty fast.*
+
+### Custom domain
+
+Added a DNS entry to my domain manager:
+
+```
+CNAME app cname.vercel-dns.com.
+```
+
+..as Vercel UI suggested. Only a few seconds, and [`app.outstanding.earth`](https://app.outstanding.earth) was running!
+
+
+### Enabled Web Analytics
+
+It's included in the Hobby (free) tier, but needs to be separately enabled:
+
+- [Vercel Web Analytics Quickstart](https://vercel.com/docs/concepts/analytics/quickstart)
+
+
+### CI/CD
+
+`tbd.`
+

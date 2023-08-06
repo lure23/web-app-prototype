@@ -6,20 +6,20 @@
 		"dev": "vite dev",
 		"build": "vite build",
 		"preview": "vite preview",
-    "--": "",
+		"--": "",
 		"test": "npm run test:integration && npm run test:unit:run",
-    "test:integration": "playwright test",
-    "test:unit": "vitest",
-    "test:unit:run": "vitest run",
-    "-- ": "",
-    "check": "svelte-kit sync && svelte-check --tsconfig ./jsconfig.json",
-    "check:watch": "svelte-kit sync && svelte-check --tsconfig ./jsconfig.json --watch",
+		"test:integration": "playwright test",
+		"test:unit": "vitest",
+		"test:unit:run": "vitest run",
+		"-- ": "",
+		"check": "svelte-kit sync && svelte-check --tsconfig ./jsconfig.json",
+		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./jsconfig.json --watch",
 		"lint": "prettier --plugin-search-dir . --check . && eslint .",
 		"format": "prettier --plugin-search-dir . --write ."
 	},
 	"devDependencies": {
 		"@playwright/test": "^1.28.1",
-		"@sveltejs/adapter-auto": "^2.0.0",
+		"@sveltejs/adapter-vercel": "^3.0.3",
 		"@sveltejs/kit": "^1.20.4",
 		"eslint": "^8.28.0",
 		"eslint-config-prettier": "^8.5.0",
@@ -32,5 +32,8 @@
 		"vite": "^4.4.2",
 		"vitest": "^0.34.1"
 	},
-	"type": "module"
+	"type": "module",
+	"dependencies": {
+		"@vercel/analytics": "^1.0.1"
+	}
 }
