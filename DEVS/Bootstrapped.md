@@ -88,8 +88,14 @@ It's included in the Hobby (free) tier, but needs to be separately enabled:
 
 - [Vercel Web Analytics Quickstart](https://vercel.com/docs/concepts/analytics/quickstart)
 
+<!-- tbd. Need some adapting of sample code.
+### Enabled Speed Insights
+
+For SvelteKit (in Aug '23), we need to bring in the [Speed Insights API](https://vercel.com/docs/concepts/speed-insights/api).
+
+- [Quickstart for Using Vercel Speed Insights](https://vercel.com/docs/concepts/speed-insights/quickstart)
+-->
 
 ### CI/CD
 
 `tbd.`
-

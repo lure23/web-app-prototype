@@ -18,13 +18,11 @@
 		"lint": "prettier --plugin-search-dir . --check . && eslint .",
 		"format": "prettier --plugin-search-dir . --write ."
 	},
-	"dependencies": {
-		"@vercel/analytics": "^1.0.1"
-	},
 	"devDependencies": {
 		"@playwright/test": "^1.28.1",
 		"@sveltejs/adapter-vercel": "^3.0.3",
 		"@sveltejs/kit": "^1.20.4",
+		"@vercel/analytics": "^1.0.1",
 		"eslint": "^8.28.0",
 		"eslint-config-prettier": "^9.0.0",
 		"eslint-plugin-svelte": "^2.30.0",
@@ -33,7 +31,13 @@
 		"svelte": "^4.0.5",
 		"svelte-check": "^3.4.3",
 		"typescript": "^5.0.0",
-		"vite": "^4.4.2",
+		"vite": "^4.4.9",
 		"vitest": "^0.34.1"
+	},
+	"//": {
+		"@vercel/analytics": [
+			"Vercel docs install it as normal dependency, but this blog [https://dev.to/lukehagar/using-vercel-analytics-with-sveltekit-381j]",
+			"as a devDependency."
+		]
 	}
 }

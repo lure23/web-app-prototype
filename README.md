@@ -7,13 +7,13 @@ This project is part of the [Light 'n Urban](https://www.youtube.com/channel/UCK
 A Svelte web app with:
 
 - 3D spheres `#tbd`
-- deployed [to Vercel](https://web-app-prototype-git-main-lure23.vercel.app)
-  - and a [custom domain](https://app.outstanding.earth)
+- [x] deployed [to Vercel](https://web-app-prototype-git-main-lure23.vercel.app)
+  - [x] and a [custom domain](https://app.outstanding.earth)
   - CI/CD `#tbd`
   - user analytics `#tbd`
 
 <!--
-- ..with user monitoring in [Grafana Cloud](...) `#tbd`
+  - performance monitoring in [Grafana Cloud](...) `#tbd`
 -->
 
 ## Requirements
@@ -69,3 +69,9 @@ You can simply deploy to a Vercel URL, but they are rather long. If you have a c
 ## CI/CD
 
 `tbd.`
+
+
+## References
+
+- [SvelteKit on Vercel](https://vercel.com/docs/frameworks/sveltekit#speed-insights) (Vercel docs)
+
