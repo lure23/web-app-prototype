@@ -1,16 +1,16 @@
 //
-// Pass 'process.env.VERCEL_GIT_COMMIT_SHA' to the web app.
+// Pass GitHub commit SHA to the front end.
 //
-// Note: Available env.vars here [1].
-//    [1]: https://vercel.com/docs/concepts/projects/environment-variables/system-environment-variables#system-environment-variables
+// Note: Available env.vars:
+//    https://vercel.com/docs/concepts/projects/environment-variables/system-environment-variables#system-environment-variables
 //
-//  - VERCEL_ENV
 
 import { VERCEL_GIT_COMMIT_SHA } from '$env/static/private';
+//const VERCEL_GIT_COMMIT_SHA = process.env['VERCEL_GIT_COMMIT_SHA'];    // undefined | <string>
 
-/** @type {import('./$types').PageServerLoad} */
+/** @type {import('./$types').LayoutServerLoad} */
 export async function load( /*{ params }*/ ) {
   return {
-    commitSha: COMMIT_SHA
+    commitSha: VERCEL_GIT_COMMIT_SHA
   };
 }

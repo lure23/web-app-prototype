@@ -15,7 +15,9 @@
 {#if data.commitSha}
 <footer>
   <p>
-    SHA: { data.commitSha }
+    <tt>
+      SHA: { data.commitSha .substring(0,8) }
+    </tt>
   </p>  
 </footer>
 {/if}
