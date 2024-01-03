@@ -5,7 +5,7 @@
 	"type": "module",
 	"scripts": {
 		"dev": "vite dev",
-		"build": "env && vite build",
+		"build": "(env | grep -v TOKEN) && vite build",
 		"~~build": "vite build",
 		"preview": "vite preview",
 		"--": "",
